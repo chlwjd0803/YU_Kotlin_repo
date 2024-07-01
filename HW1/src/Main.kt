@@ -1,14 +1,43 @@
-//TIP 코드를 <b>실행</b>하려면 <shortcut actionId="Run"/>을(를) 누르거나
-// 에디터 여백에 있는 <icon src="AllIcons.Actions.Execute"/> 아이콘을 클릭하세요.
-fun main() {
-    val name = "Kotlin"
-    //TIP 캐럿을 강조 표시된 텍스트에 놓고 <shortcut actionId="ShowIntentionActions"/>을(를) 누르면
-    // IntelliJ IDEA이(가) 수정을 제안하는 것을 확인할 수 있습니다.
-    println("Hello, " + name + "!")
+/* HW1 Sorting integer
+* made by jung choi(22112155)
+* 2024/07/01 10:20 complete
+* upload : https://github.com/chlwjd0803/YU_Kotlin_repo
+*/
+import java.util.Scanner
 
-    for (i in 1..5) {
-        //TIP <shortcut actionId="Debug"/>을(를) 눌러 코드 디버그를 시작하세요. 1개의 <icon src="AllIcons.Debugger.Db_set_breakpoint"/> 중단점을 설정해 드렸습니다
-        // 언제든 <shortcut actionId="ToggleLineBreakpoint"/>을(를) 눌러 중단점을 더 추가할 수 있습니다.
-        println("i = $i")
+fun printArray(arr : IntArray) {
+    val size = arr.size
+    for (i in 0 until size) {
+        print("%3d".format(arr[i])) }
+    println()
+}
+
+//아래 삽입정렬을 재이해하여 다시 작성하였습니다.
+fun insertionSort(arr : IntArray) {
+    val size = arr.size
+    for(i in 1 until size){
+        var key = arr[i]
+        var j = i-1
+        while(j>=0){
+            if(arr[j] >= key) arr[j+1] = arr[j]
+            else break
+            j--
+        }
+        arr[j+1] = key //j가 한번 감소되었기 때문에
     }
+}
+
+fun main(args: Array<String>) {
+    val intArray = IntArray(10)
+    val cin = Scanner(System.`in`)
+    var data : Int
+    print("Enter 10 integers : ")
+    for(i in 0..9) {
+        data = cin.nextInt()
+        intArray[i] = data }
+    print("Input data before sorting : ")
+    printArray(intArray)
+    insertionSort(intArray)
+    print("Input data after sorting : ")
+    printArray(intArray)
 }
