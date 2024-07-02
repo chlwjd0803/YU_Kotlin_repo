@@ -1,3 +1,8 @@
+/* HW2.1
+* made by jung choi(22112155)
+* upload : https://github.com/chlwjd0803/YU_Kotlin_repo
+*/
+
 import java.util.Scanner
 import kotlin.math.pow
 import kotlin.math.sqrt

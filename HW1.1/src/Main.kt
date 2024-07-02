@@ -1,6 +1,5 @@
-/* HW1 Sorting integer
+/* HW1.1 Sorting integer
 * made by jung choi(22112155)
-* 2024/07/01 10:20 complete
 * upload : https://github.com/chlwjd0803/YU_Kotlin_repo
 */
 import java.util.Scanner

@@ -1,6 +1,5 @@
-/* HW2 Fibonacci speed optimized ver
+/* HW1.2 Fibonacci speed optimized ver
 * made by jung choi(22112155)
-* 2024/07/01 10:20 complete
 * upload : https://github.com/chlwjd0803/YU_Kotlin_repo
 */
 
