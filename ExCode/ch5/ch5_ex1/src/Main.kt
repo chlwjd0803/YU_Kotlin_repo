@@ -3,7 +3,6 @@
 *
 * 오버라이딩 개념 중요
  */
-
 import MyKotlinClasses.Student
 import MyKotlinClasses.Employee
 // 기본클래스는 별도로 필요하지 않음
