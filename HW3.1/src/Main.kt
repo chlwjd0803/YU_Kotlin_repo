@@ -31,6 +31,7 @@ fun printBigArraySample(bigArray: IntArray, per_line: Int, sample_lines: Int) {
         print("${bigArray[i]} ")
         samcnt++
     }
+    println("\n. . . . .")
     val size = bigArray.size
     for(i in (size-(sample_lines*per_line)) until size){
         if(samcnt == per_line){
