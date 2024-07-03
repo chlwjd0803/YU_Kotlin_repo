@@ -1,5 +1,7 @@
 /*
 * this code is YU Ex code.
+*
+* 오버라이딩 개념 중요
  */
 
 import MyKotlinClasses.Student
