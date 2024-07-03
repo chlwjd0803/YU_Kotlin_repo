@@ -1,4 +1,5 @@
 package MyKotlinClasses
+
 open class Person (){
     var name : String = ""
     val dmmy1 = println("(3) Declaration of Person.name")

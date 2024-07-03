@@ -1,5 +1,5 @@
 package MyKotlinClasses
-import MyKotlinClasses.Person
+
 class Employee : Person {
     private var emp_id : Int = 0
     private var company: String? = null

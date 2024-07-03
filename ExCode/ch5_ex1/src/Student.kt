@@ -1,4 +1,5 @@
 package MyKotlinClasses
+
 class Student : Person {
     var st_id : Int = 0
     val dmmy3 = println("(7) Declaration of Student.st_id")
@@ -12,7 +13,7 @@ class Student : Person {
         this.st_major = mjr
         println("(10) Initialization of st_id and major in Student secondary constructor")
     }
-    override fun print() {
+    override fun print() { //오버라이딩을 통한 기본클래스 함수 무력화
         println("Student(name=%s, reg_id=%d, st_id=%d, major=%s)".format(this.name,
             this.reg_id, this.st_id, this.st_major))
     }
