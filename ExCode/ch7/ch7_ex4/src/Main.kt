@@ -33,7 +33,8 @@ fun main() {
 
     try {
         fin = FileInputStream(fin_name);
-        cin = InputStreamReader(fin, "UTF-8"); // char set for korean text file reading
+        //cin = InputStreamReader(fin, "UTF-8"); // char set for korean text file reading
+        cin = InputStreamReader(fin); //기본 개발환경이 UTF-8로 설정되있어 위와 같은 코드가 됨
         //UTF-8 설정을 통해 한글이 깨지는 것을 방지
         System.out.printf("Encoding char set = %s\n", cin.getEncoding());
         while (true) {
