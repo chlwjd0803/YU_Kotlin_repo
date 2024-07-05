@@ -43,7 +43,7 @@ fun main(args: Array<String>) {
     dag.printDistTable()
     val path: List<Vertex>?
     val vStart = dag.vrtxArray[0]
-    val vEnd = dag.vrtxArray[5]
+    val vEnd = dag.vrtxArray[3]
     println("DAG ShortestPathFirst (%s -> %s) . . . . ".format(vStart.getName(), vEnd.getName()))
     path = dag.DAGShortestPath(vStart, vEnd)
     println("Result DAG ShortestPathFirst (%s -> %s) : ".format(vStart.getName(), vEnd.getName()))
